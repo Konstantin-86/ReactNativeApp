@@ -55,14 +55,6 @@ export default function Welcome() {
     }
   };
 
-  /*  if (isCheckingStorage) {
-    return (
-      <View style={styles.container}>
-        <ActivityIndicator size="large" />
-      </View>
-    );
-  } */
-
   if (showWelcome) {
     return (
       <View style={styles.container}>
@@ -74,7 +66,6 @@ export default function Welcome() {
     );
   }
 
-  // Форма ввода имени
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Wellcome</Text>

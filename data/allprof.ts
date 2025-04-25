@@ -1,9 +1,5 @@
 
-interface Prof {
-    "codeOfProg": number,
-    "nameOfProf": string,
-    "numberOfQuestions": number
-}
+import { Prof } from "../data/types";
 
 export const allProf: Prof[] = [
     {

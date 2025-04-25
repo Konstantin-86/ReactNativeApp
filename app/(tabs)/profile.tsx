@@ -1,9 +1,16 @@
 import { View, Text, StyleSheet } from "react-native";
+import { useNameStore } from "../../store/store";
+import { useEffect } from "react";
 
 const Profile = () => {
+  const { name, getName } = useNameStore();
+  useEffect(() => {
+    getName();
+  }, []);
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Profile в табах</Text>
+      <Text>Profile в {name}</Text>
     </View>
   );
 };
